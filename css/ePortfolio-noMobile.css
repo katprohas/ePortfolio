@@ -1,0 +1,427 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+menu,
+nav,
+output,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    /*reset default browser css settings*/
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    list-style: none;
+    font-family: "Poppins";
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-family: "Poppins";
+    font-weight: 600;
+    font-style: semi-bold;
+    font-size: 2em;
+}
+
+/* HEADER STYLING*/
+#header {
+    background-color: rgb(56, 117, 171);
+    overflow-x: hidden;
+    width: 100%;
+    color: white;
+}
+
+
+
+.nav-container {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-container {
+    /*for name in top left corner of header*/
+    text-transform: uppercase;
+    font-size: 1.3em;
+    font-style: semi-bold;
+}
+
+.nav-top-items .active {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.nav-top-items li {
+    display: inline-block;
+
+}
+
+.nav-top-items li a {
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: relative;
+    text-align: right;
+    float: right;
+    margin: 10px 20px;
+}
+
+.nav-top-items a {
+    /* style the nav links */
+    color: white;
+    text-decoration: none;
+}
+
+.nav-top-items a:hover {
+    /* style the nav links */
+    color: white;
+    text-decoration: underline;
+}
+
+
+/* BODY STYLING */
+main {
+    max-width: 80%;
+    /* margin: 20px; */
+
+    min-width: 40%;
+}
+
+.page-container {
+    display: column;
+    flex-direction: row;
+    background-color: lightblue;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    align-items: center;
+}
+
+/* HOME PAGE */
+.home-container,
+.container {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+
+}
+
+.home-header,
+.general-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    text-align: center;
+    color: rgb(3, 45, 83);
+
+}
+
+.info-pic {
+    border-radius: 50%;
+    box-shadow: 1px 1px 5px black;
+    margin: 10px 20px;
+    width: 200px;
+    height: auto;
+}
+
+
+.home-text {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.home-text h2 {
+    font-weight: 600;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+}
+
+/* PROJECTS */
+.proj-name {
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+ul {
+    margin-left: 20px;
+}
+
+/* SKILLS AND CERTS */
+.skill-set {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+
+.container h2 {
+    font-weight: 600;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+}
+
+.skill-set h3 {
+    font-weight: 600;
+    font-style: italic;
+    width: 250px;
+}
+
+.cert-set {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+}
+
+.date {
+    font-weight: 300;
+    font-style: italic;
+}
+
+.cert-name {
+    font-weight: 500;
+
+}
+
+.skill-set p {
+    font-size: .9em;
+}
+
+/* RESUME */
+.resume-summary {
+    font-size: .9em;
+}
+
+.exp-set {
+    font-size: .9em;
+}
+
+h2 {
+    margin-top: 10px;
+}
+
+.exp-head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.exp-location {
+    color: rgb(0, 77, 144);
+    font-style: italic;
+    text-align: right;
+}
+
+.exp-date {
+    font-weight: 300;
+    font-style: italic;
+    font-size: .8em;
+    text-align: right;
+}
+
+.exp-company {
+    font-weight: 700;
+}
+
+.exp-title {
+    font-size: .8em;
+    text-transform: uppercase;
+}
+
+.exp-description {
+    font-size: .8em;
+    margin-left: 20px;
+}
+
+
+/* FOOTER STYLING*/
+footer {
+    background-color: rgb(56, 117, 171);
+    color: white;
+    overflow-x: hidden;
+    width: 100%;
+    /* bottom: 0;
+    position: absolute; */
+    margin-top: auto;
+}
+
+#footer-container {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Configure socials icons */
+.socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.socials-img {
+    height: 30px;
+    margin: 10px;
+}
+
+@media screen and (max-width: 910px) {
+    .nav-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-top-items li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* HOME PAGE */
+    .home-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .home-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home-text {
+        margin-bottom: auto;
+
+    }
+
+
+    .skill-set {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer {
+        background-color: rgb(56, 117, 171);
+        color: white;
+        overflow-x: hidden;
+        width: 100%;
+        bottom: 0;
+        position: relative;
+
+    }
+
+    img {
+        height: auto;
+        max-width: 40%;
+    }
+
+    h1 {
+        font-size: 1.2em;
+    }
+
+}
